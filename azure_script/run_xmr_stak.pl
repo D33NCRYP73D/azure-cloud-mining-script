@@ -352,7 +352,7 @@ sub RunXMRStak{
     my $configfile= shift;
     
     #run xmrig in parallel
-    system("sudo nice -n -20 sudo ./xmrigDaemon --config=$configfile & ");
+    system("sudo nice -n -20 sudo /root/startup/wd/xmrigCC/build --config=$configfile & ");
 
     #wait for some time
     sleep ($runtime);
