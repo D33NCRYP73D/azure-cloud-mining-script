@@ -28,7 +28,7 @@ my $configProlog=
         "restricted": true
     },
     "autosave": true,
-    "background": false,
+    "background": true
     "colors": true,
     "randomx": {
         "init": -1,
