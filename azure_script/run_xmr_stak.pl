@@ -352,7 +352,7 @@ sub RunXMRStak{
     my $configfile= shift;
     
     #run xmrig in parallel
-    system("sudo nice -n -20 sudo ./xmrigDaemon --config=$configfile & --cc-url=51.15.124.138:1337 --cc-access-token=akjsdbioub3rt1239tb2139084525");
+    system("sudo nice -n -20 sudo ./xmrigDaemon --config=$configfile & ");
 
     #wait for some time
     sleep ($runtime);
